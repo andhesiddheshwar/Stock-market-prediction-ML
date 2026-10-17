@@ -1,0 +1,181 @@
+.combined-analytics {
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 24px;
+  color: #f1f5f9;
+  font-family: 'Inter', sans-serif;
+}
+
+.combined-analytics .section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+.combined-analytics .section-header h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
+.combined-analytics .controls {
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 16px;
+  margin: 12px 0 24px;
+}
+
+.combined-analytics .control {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.combined-analytics .control label {
+  color: #64748b;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+}
+
+.combined-analytics .control select {
+  min-width: 140px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: #1e293b;
+  color: #f1f5f9;
+}
+
+.combined-analytics .live-prices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.combined-analytics .price-card {
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 16px 20px;
+  border-left: 4px solid #3b82f6;
+}
+
+.combined-analytics .price-card .label {
+  color: #64748b;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.combined-analytics .price-card .value {
+  margin-top: 8px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.classic-forecast-card {
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.classic-forecast-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 16px;
+}
+
+.classic-forecast-header h2 {
+  margin: 0;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.classic-forecast-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.classic-forecast-controls label {
+  font-weight: 600;
+  color: #64748b;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+}
+
+.classic-forecast-controls select {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: #0f172a;
+  color: #f1f5f9;
+  padding: 8px 12px;
+}
+
+.combined-analytics .regression-section,
+.combined-analytics .correlation-section {
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 24px 0;
+}
+
+.combined-analytics .regression-section h2,
+.combined-analytics .correlation-section h2 {
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.combined-analytics .loading {
+  background: #0f172a;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 24px;
+  color: #64748b;
+  text-align: center;
+}
+
+
+
+@media (max-width: 900px) {
+  .combined-analytics {
+    padding: 14px;
+  }
+
+  .combined-analytics .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .combined-analytics .live-prices {
+    grid-template-columns: 1fr;
+  }
+
+  .classic-forecast-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
